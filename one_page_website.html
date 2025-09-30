@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My One Page Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    section {
+      padding: 50px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    img {
+      width: 250px;
+      margin: 10px;
+    }
+    form {
+      max-width: 400px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pictures">Pictures</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My One-Page Website</h1>
+    <p>
+      This is the home section of my project. I used HTML5 elements to organize everything 
+      neatly into one page with navigation links that take you to different sections.
+    </p>
+  </section>
+
+  <!-- Pictures Section -->
+  <section id="pictures">
+    <h2>Picture Gallery</h2>
+    <img src="https://via.placeholder.com/250" alt="Sample Image 1">
+    <img src="https://via.placeholder.com/250" alt="Sample Image 2">
+    <img src="https://via.placeholder.com/250" alt="Sample Image 3">
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2>Featured Video</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My One-Page Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
