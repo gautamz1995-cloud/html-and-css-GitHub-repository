@@ -1,0 +1,280 @@
+<!--
+Upgrade Pack: one_page_website.html + styles.css
+Drop both files into your existing “One-Page Website” folder.
+If you already have one_page_website.html, copy just the parts you want or replace with this improved version.
+-->
+
+<!-- ===================== one_page_website.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My One‑Page Website</title>
+  <meta name="description" content="A clean, responsive one‑page website enhanced with modern CSS." />
+
+  <!-- 1) Link your external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional: Favicon -->
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky Navigation with bookmark links -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#home">MySite</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu" class="nav__list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero / Home -->
+    <section id="home" class="hero section">
+      <div class="container grid-2">
+        <div class="stack gap-3">
+          <h1 class="title">Build once. Style beautifully.</h1>
+          <p class="lead">This one‑page site demonstrates a clean, responsive layout using Flexbox, Grid, and modern CSS features like variables, fluid type, and prefers‑color‑scheme.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#features">Explore Features</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0b5?q=80&w=1200&auto=format&fit=crop" alt="Abstract gradient shapes" loading="lazy" />
+          <figcaption class="sr-only">Abstract colorful background</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Features (cards) -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section__title">Features</h2>
+        <p class="section__subtitle">Quick highlights of what this page demonstrates.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Flexbox & Grid</h3>
+            <p>Responsive layout powered by modern CSS, no frameworks required.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible Nav</h3>
+            <p>Keyboard‑friendly, semantic landmarks, skip links, and high‑contrast states.</p>
+          </article>
+          <article class="card">
+            <h3>Fluid Typography</h3>
+            <p>Type scales that adapt to screen size using <code>clamp()</code>.</p>
+          </article>
+          <article class="card">
+            <h3>Dark Mode</h3>
+            <p>Automatic theming with <code>prefers‑color‑scheme</code>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Gallery</h2>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?q=80&w=1200&auto=format&fit=crop" alt="City skyline" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Forest" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1520975693416-35a9bff9e1df?q=80&w=1200&auto=format&fit=crop" alt="Mountains" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Desk setup" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Code on screen" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" alt="Galaxy" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2 class="section__title">Video</h2>
+        <div class="video">
+          <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Embedded video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section section--alt">
+      <div class="container narrow">
+        <h2 class="section__title">Contact</h2>
+        <form class="form" action="#" method="post">
+          <div class="form__row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite • Built with ❤️ and modern CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal JS for the mobile nav toggle and current year
+    const toggle = document.querySelector('.nav__toggle');
+    const menu = document.getElementById('navMenu');
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+/* ===================== styles.css ===================== */
+/* 1) CSS Reset + sensible defaults */
+* { box-sizing: border-box; }
+html:focus-within { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+img, video, iframe { max-width: 100%; display: block; }
+:where(h1, h2, h3) { line-height: 1.2; }
+:where(a) { color: inherit; }
+
+/* 2) Design tokens */
+:root {
+  --bg: #0f1220;
+  --surface: #14182b;
+  --text: #e6e8ef;
+  --muted: #aab0c0;
+  --brand: #6c7dff;
+  --brand-600: #5465f1;
+  --ring: #a3adff;
+  --card: #171b31;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+  --radius: 16px;
+
+  /* Fluid type scale */
+  --step--1: clamp(0.85rem, 0.82rem + 0.2vw, 0.95rem);
+  --step-0: clamp(1rem, 0.96rem + 0.3vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.18rem + 0.6vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.45rem + 1vw, 2rem);
+  --step-3: clamp(2rem, 1.8rem + 1.5vw, 2.6rem);
+  --step-4: clamp(2.6rem, 2.3rem + 2vw, 3.4rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f8fb;
+    --surface: #ffffff;
+    --text: #0f1220;
+    --muted: #4a5165;
+    --card: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,.12);
+  }
+}
+
+/* 3) Base elements */
+body { background: radial-gradient(1500px 800px at 90% -10%, rgba(108,125,255,0.25), transparent 60%), var(--bg); color: var(--text); }
+.container { width: min(1100px, 92%); margin-inline: auto; }
+.narrow { width: min(720px, 92%); }
+.section { padding: 6rem 0; }
+.section--alt { background: var(--surface); }
+.section__title { font-size: var(--step-2); margin: 0 0 0.25rem 0; }
+.section__subtitle { color: var(--muted); margin: 0 0 2rem 0; }
+.title { font-size: var(--step-4); margin: 0; }
+.lead { color: var(--muted); font-size: var(--step-1); }
+.stack { display: flex; flex-direction: column; }
+.gap-3 { gap: 1rem; }
+
+/* 4) Buttons */
+.btn { display: inline-block; padding: 0.8rem 1.1rem; border-radius: 999px; text-decoration: none; font-weight: 600; border: 1px solid transparent; box-shadow: var(--shadow); transition: transform .15s ease, box-shadow .15s ease, background .2s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+.btn--primary { background: linear-gradient(135deg, var(--brand), var(--brand-600)); color: white; }
+.btn--ghost { background: transparent; color: var(--text); border-color: color-mix(in lab, var(--text) 20%, transparent); }
+
+/* 5) Header & Nav */
+.site-header { position: sticky; top: 0; z-index: 1000; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in lab, var(--bg) 75%, transparent); border-bottom: 1px solid color-mix(in lab, var(--text) 8%, transparent); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; }
+.logo { font-weight: 800; letter-spacing: .3px; font-size: 1.1rem; text-decoration: none; }
+.nav__toggle { display: none; font: inherit; background: var(--surface); color: var(--text); border: 1px solid color-mix(in lab, var(--text) 10%, transparent); border-radius: 10px; padding: .5rem .65rem; }
+.nav__list { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.nav__list a { text-decoration: none; padding: .5rem .75rem; border-radius: 10px; color: var(--text); }
+.nav__list a:hover, .nav__list a:focus-visible { background: color-mix(in lab, var(--text) 10%, transparent); }
+
+@media (max-width: 820px) {
+  .nav__toggle { display: inline-block; }
+  .nav__list { position: absolute; right: 4%; top: 60px; background: var(--surface); border: 1px solid color-mix(in lab, var(--text) 10%, transparent); border-radius: 14px; padding: .5rem; flex-direction: column; min-width: 200px; display: none; box-shadow: var(--shadow); }
+  .nav__list.open { display: flex; }
+}
+
+/* 6) Hero */
+.grid-2 { display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 2rem; }
+.hero__media { overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; transform: scale(1.02); transition: transform .6s ease; }
+.hero__media:hover img { transform: scale(1.06); }
+@media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* 7) Cards */
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.card { background: var(--card); padding: 1.25rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid color-mix(in lab, var(--text) 8%, transparent); transition: transform .15s ease; }
+.card:hover { transform: translateY(-2px); }
+@media (max-width: 1000px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+
+/* 8) Gallery Grid */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.gallery img { border-radius: 12px; aspect-ratio: 4/3; object-fit: cover; filter: saturate(1.05) contrast(1.05); }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .gallery { grid-template-columns: 1fr; } }
+
+/* 9) Responsive Video */
+.video { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.video iframe { width: 100%; height: 100%; border: 0; }
+
+/* 10) Form */
+.form { display: grid; gap: 1rem; background: var(--card); padding: 1.25rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid color-mix(in lab, var(--text) 8%, transparent); }
+.form__row { display: grid; gap: 0.35rem; }
+label { font-weight: 600; }
+input, textarea { background: var(--surface); color: var(--text); border: 1px solid color-mix(in lab, var(--text) 12%, transparent); border-radius: 10px; padding: .7rem .8rem; font-size: var(--step-0); outline: none; }
+input:focus, textarea:focus { border-color: var(--brand); box-shadow: 0 0 0 4px color-mix(in lab, var(--brand) 30%, transparent); }
+
+/* 11) Footer */
+.site-footer { padding: 2rem 0 3rem; color: var(--muted); text-align: center; }
+
+/* 12) Utilities & helpers */
+.skip-link { position: absolute; left: -9999px; top: -9999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: var(--surface); color: var(--text); padding: .5rem .75rem; border-radius: 10px; box-shadow: var(--shadow); }
+
+/* 13) Nice touches */
+::selection { background: color-mix(in lab, var(--brand) 30%, transparent); }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
