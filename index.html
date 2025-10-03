@@ -1,134 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bootstrap 4 Starter</title>
-  <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">B4 Site</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample" aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
-  <!-- Hero / Jumbotron -->
-  <header id="home" class="jumbotron jumbotron-fluid mb-0 bg-primary text-white">
-    <div class="container">
-      <h1 class="display-4">Bootstrap 4 Project</h1>
-      <p class="lead">A basic website that uses Bootstrap 4 components and grid.</p>
-      <a href="#features" class="btn btn-light btn-lg">Explore</a>
-    </div>
-  </header>
-
-  <!-- Features Section -->
-  <section id="features" class="py-5">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col text-center">
-          <h2 class="h1">Features</h2>
-          <p class="text-muted">Cards, grid, responsive images, forms, and more.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pravesh Gautam – Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheet/portfolio.css" />
+  </head>
+  <body class="Background">
+    <header>
+      <nav class="Navbar" aria-label="Primary">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="home">
+      <section class="Hero" aria-label="Intro video">
+        <video autoplay muted loop playsinline id="Typing_Video" poster="images/hero_poster.png">
+          <source src="images/video/Typing.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="Video_Text" aria-live="polite">
+          <h1>Pravesh Gautam’s Portfolio</h1>
+          <p class="center"><q>The computer programmer is a creator of universes for which he alone is the lawgiver.</q><br />— Joseph Weizenbaum</p>
+          <p class="center">Hi, I’m <strong>Pravesh</strong>. I build clean, responsive websites and continuously improve them.</p>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/600/400?random=1" class="card-img-top img-fluid" alt="Random placeholder image">
-            <div class="card-body">
-              <h5 class="card-title">Responsive Grid</h5>
-              <p class="card-text">Built with the Bootstrap 4 grid for mobile‑first, responsive layouts.</p>
-              <a href="#" class="btn btn-primary">Learn more</a>
-            </div>
-          </div>
+      </section>
+      <section class="Row" id="about">
+        <div class="Column_2">
+          <img src="images/html_custom.png" alt="About illustration" />
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/600/400?random=2" class="card-img-top img-fluid" alt="Random placeholder image">
-            <div class="card-body">
-              <h5 class="card-title">Utilities</h5>
-              <p class="card-text">Spacing, colors, typography—compose designs rapidly with utility classes.</p>
-              <a href="#" class="btn btn-outline-primary">Docs</a>
-            </div>
-          </div>
+        <div class="Column_1">
+          <h2>About</h2>
+          <p>I’m a developer focused on building simple, fast, and accessible web experiences. This site will evolve as I add JavaScript and more.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="https://picsum.photos/600/400?random=3" class="card-img-top img-fluid" alt="Random placeholder image">
-            <div class="card-body">
-              <h5 class="card-title">Components</h5>
-              <p class="card-text">Cards, navbars, buttons, forms, and more—ready to use.</p>
-              <a href="#" class="btn btn-outline-secondary">Examples</a>
-            </div>
-          </div>
+      </section>
+      <section class="Row" id="github">
+        <div class="Column_1">
+          <h2>GitHub</h2>
+          <p>See my projects and code here:</p>
+          <p class="center">
+            <a href="https://github.com/gautamz1995-cloud" target="_blank" rel="noopener noreferrer">
+              github.com/gautamz1995-cloud
+            </a>
+          </p>
+          <ul class="Project_List">
+            <li><a href="https://github.com/gautamz1995-cloud/one-page-website" target="_blank" rel="noopener noreferrer">One-Page Website</a></li>
+            <li><a href="https://github.com/gautamz1995-cloud/bootstrap4_project" target="_blank" rel="noopener noreferrer">Bootstrap 4 Project</a></li>
+            <li><a href="https://github.com/gautamz1995-cloud/portfolio" target="_blank" rel="noopener noreferrer">This Portfolio (source)</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col text-center">
-          <h2 class="h1">Contact</h2>
-          <p class="text-muted">Example of a Bootstrap 4 form using your custom CSS too.</p>
+        <div class="Column_2">
+          <a href="https://github.com/gautamz1995-cloud" target="_blank" rel="noopener noreferrer">
+            <img src="images/GitHub.png" alt="GitHub logo" />
+          </a>
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="How can we help?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success btn-lg">Send</button>
+      </section>
+      <section class="Row" id="contact">
+        <div class="Column_2 Column_tall">
+          <img src="images/html_custom.png" alt="Contact illustration" />
+        </div>
+        <div class="Column_1 Column_tall">
+          <h2>Contact</h2>
+          <form action="" method="POST" novalidate>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+            <input type="submit" value="SUBMIT" />
           </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>© <span id="year"></span> Bootstrap4 Project</small>
-    </div>
-  </footer>
-
-  <!-- JS: jQuery + Popper.js + Bootstrap 4 JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      </section>
+    </main>
+    <footer>
+      <p class="center">© <span id="year"></span> Pravesh Gautam •
+      <a href="https://github.com/gautamz1995-cloud" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
